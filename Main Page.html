@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid gray;
+        border-color: aqua;
+      } */
+      .side_white {
+        background-color: white;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .direction_column {
+        flex-direction: column;
+      }
+      .direction_row {
+        flex-direction: row;
+      }
+      .shadow {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+      .center {
+        width: 200px;
+        height: 60px;
+        display: table;
+        /* border: 2px solid blue; */
+      }
+      .table-div {
+        display: table-cell;
+        vertical-align: middle;
+        /* border: 1px solid red; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div
+      style="
+        width: 200px;
+        margin-left: 8px;
+        background-color: white;
+        color: blue;
+        font-size: 20px;
+        text-align: center;
+      "
+      class="flex direction_column side_white"
+    >
+      <div class="center">
+        <div style="height: 60px; text-align: center" class="table-div">
+          <img
+            src="https://th.bing.com/th/id/OIP.10RT2-_PKKVWovVLsW850AHaEK?rs=1&pid=ImgDetMain"
+            alt="Me"
+            width="100px"
+            height="50px"
+          />
+        </div>
+      </div>
+      <div class="center">
+        <div style="height: 60px; margin-top: 8px" class="table-div shadow">
+          <a href="www.baidu.com"> first chapter</a>
+        </div>
+      </div>
+      <div class="center">
+        <div style="height: 60px; margin-top: 8px" class="table-div shadow">
+          second chapter
+        </div>
+      </div>
+      <div class="center">
+        <div style="height: 60px; margin-top: 8px" class="table-div shadow">
+          third chapter
+        </div>
+      </div>
+      <div class="center">
+        <div style="height: 60px; margin-top: 8px" class="table-div shadow">
+          fourth chapter
+        </div>
+      </div>
+      <div class="center">
+        <div style="height: 60px; margin-top: 8px" class="table-div shadow">
+          fifth chapter
+        </div>
+      </div>
+
+      <div style="height: 200px; margin-top: 8px"></div>
+    </div>
+    <!--主区域-->
+    <div
+      class="flex1 flex direction_column shadow"
+      style="background-color: #eee; margin-left: 8px; margin-right: 8px"
+    >
+      <!--头部栏-->
+      <div
+        style="height: 80px; margin-bottom: 8px; background-color: white"
+        class="flex shadow"
+      ></div>
+      <!--内容区-->
+      <div class="flex1 flex direction_row shadow">
+        <!--left area-->
+        <div style="width: 1000px" class="flex direction_column">
+          <!--four columns-->
+          <div
+            style="height: 60px; background-color: white"
+            class="flex direction_row shadow"
+          >
+            <div style="flex: 1; margin: 8px" class="shadow"></div>
+            <div style="flex: 1; margin: 8px" class="shadow"></div>
+            <div style="flex: 1; margin: 8px" class="shadow"></div>
+            <div style="flex: 1; margin: 8px" class="shadow"></div>
+          </div>
+          <!--below four columns-->
+          <div
+            class="flex shadow"
+            style="height: 150px; margin-top: 8px; background-color: white"
+          ></div>
+          <div
+            class="flex shadow"
+            style="height: 150px; margin-top: 8px; background-color: white"
+          ></div>
+          <div
+            class="flex shadow"
+            style="height: 100px; margin-top: 8px; background-color: white"
+          ></div>
+          <div
+            class="flex shadow"
+            style="flex: 1; margin-top: 8px; background-color: white"
+          ></div>
+        </div>
+        <!--right area-->
+        <div class="flex flex1 direction_column" style="margin-left: 8px">
+          <div
+            style="height: 230px; background-color: white"
+            class="shadow"
+          ></div>
+          <div
+            style="height: 230px; background-color: white; margin-top: 8px"
+            class="shadow"
+          ></div>
+          <div
+            style="
+              flex: 1;
+              background-color: rgba(128, 128, 128, 0.26);
+              margin-top: 8px;
+            "
+            class="shadow"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
